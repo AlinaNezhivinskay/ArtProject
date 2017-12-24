@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:background="#78909C" />
+
+        <Button
+            android:id="@+id/add_picture_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addIcon"
+            android:text="Add picture" />
+        <EditText
+            android:id="@+id/add_picture_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/add_picture_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="2017"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/add_picture_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24" />
+
+        <Spinner
+            android:id="@+id/add_picture_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29" />
+
+        <Spinner
+            android:id="@+id/add_picture_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26" />
+
+        <Button
+            android:id="@+id/add_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addPicture"
+            android:text="Save" />
+
+    </LinearLayout>
+</GridLayout>
